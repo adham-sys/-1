@@ -1,25 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<windows.h> 
-  typedef struct _WIN32_FIND_DATAA {
-    DWORD dwFileAttributes;
-    FILETIME ftCreationTime;
-    FILETIME ftLastAccessTime;
-    FILETIME ftLastWriteTime;
-    DWORD nFileSizeHigh;
-    DWORD nFileSizeLow;
-    DWORD dwReserved0;
-    DWORD dwReserved1;
-    CHAR cFileName[MAX_PATH];
-    CHAR cAlternateFileName[14];
-  } WIN32_FIND_DATAA;
-   
-  typedef  struct linked_list{
+typedef  struct linked_list{
     int item;
    struct linked_list *next;
   } ls;
- 
-#define MAXBUFF 10  
+
 ls* create_node(int data){
 
   ls *seq = malloc(sizeof(ls));
@@ -116,7 +101,7 @@ int main(){
   insert_node(15);
   insert_node(20);
   ls*new_first=insert_at_beginning(first,value);
-  // ls*last_val= insert_at_end(new_first,nu);
+  ls*last_val= insert_at_end(new_first,nu);
   delete_node(new_first,20);
   show_node(new_first);
  
