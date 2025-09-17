@@ -93,6 +93,7 @@ void delete_node(ls*head,int val){
   
 }
 //entery point 
+//datastructure
 //void
 int main(){
   ls*first=insert_node(5);
