@@ -92,7 +92,7 @@ void delete_node(ls*head,int val){
   }
   
 }
-
+//main
 int main(){
   ls*first=insert_node(5);
   int value=7;
