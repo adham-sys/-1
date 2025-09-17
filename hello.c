@@ -93,6 +93,12 @@ void delete_node(ls*head,int val){
   
 }
 
+
+//entery point 
+//datastructure
+//void
+//my fucking life
+
 int main(){
   ls*first=insert_node(5);
   int value=7;
